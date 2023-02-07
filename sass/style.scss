@@ -145,6 +145,10 @@ body{
       font-size: 4rem;
       font-weight: 800;
       line-height: 40px;
+      @media(min-width:700px) and (max-width:1139px){
+        width: 100%;
+        text-align: center;
+      }
       @media(min-width:1140px){
         grid-column: 1;
         grid-row: 2 / span 2;
@@ -276,14 +280,16 @@ body{
         line-height: 20px;
       }
     }
-    @media(min-width: 920px){
+    @media(min-width: 920px) and (max-width:1139px){
       grid-column: 2;
       grid-row: 2;
-      flex-direction: row;
+      flex-direction: column;
+      margin: 40px;
     }
     @media(min-width: 1140px){
       grid-column: 1 / 6;
       grid-row: 2;
+      flex-direction: row;
     }
   }
 }

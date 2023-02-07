@@ -167,6 +167,12 @@ body {
   font-weight: 800;
   line-height: 40px;
 }
+@media (min-width: 700px) and (max-width: 1139px) {
+  .content .bright__title {
+    width: 100%;
+    text-align: center;
+  }
+}
 @media (min-width: 1140px) {
   .content .bright__title {
     grid-column: 1;
@@ -315,17 +321,19 @@ body {
   color: hsl(236deg, 13%, 42%);
   line-height: 20px;
 }
-@media (min-width: 920px) {
+@media (min-width: 920px) and (max-width: 1139px) {
   .content .topics {
     grid-column: 2;
     grid-row: 2;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 40px;
   }
 }
 @media (min-width: 1140px) {
   .content .topics {
     grid-column: 1/6;
     grid-row: 2;
+    flex-direction: row;
   }
 }
 
