@@ -11,42 +11,66 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-   -->
+  <header class="header">
+    <nav class="nav">
+      <img src="images/logo.svg" alt="logo" class="nav__logo">
+      <label for="menu" class="nav__label"></label>
+      <input type="checkbox" id="menu" class="nav__input">
+      <div class="nav__menu">
+        <a href="#" class="nav__item">Home</a>
+        <a href="#" class="nav__item">New</a>
+        <a href="#" class="nav__item">Popular</a>
+        <a href="#" class="nav__item">Trending</a>
+        <a href="#" class="nav__item">Categories</a>
+      </div>
+    </nav>
+  </header>
+  <main class="content">
+    <article class="bright">
+      <picture class="bright__figure">
+        <source srcset="images/image-web-3-desktop.jpg" media="(min-width: 900px)" />
+        <img src="images/image-web-3-mobile.jpg" alt="bright" class="bright__img" />
+      </picture>
+      <h1 class="bright__title">The Bright Future of Web 3.0?</h1>
+      <p class="bright__info">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+      <button class="bright__cta">Read more</button>
+    </article>
+    <section class="new">
+      <h2 class="new__title">New</h2>
+      <div class="new__info">
+        <h3 class="info__title">Hydrogen VS Electric Cars</h3>
+        <p class="info__description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <div class="new__info">
+        <h3 class="info__title">The Downsides of AI Artistry</h3>
+        <p class="info__description">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="new__info">
+        <h3 class="info__title">Is VC Funding Drying Up?</h3>
+        <p class="info__description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </section>
+    <section class="topics">
+      <div class="topic">
+        <img src="images/image-retro-pcs.jpg" alt="" class="topic__img">
+        <span class="topic__number">01</span>
+        <h3 class="topic__title">Reviving Retro PCs</h3>
+        <p class="topic__description">What happens when old PCs are given modern upgrades?</p>
+      </div>
+      <div class="topic">
+        <img src="images/image-top-laptops.jpg" alt="" class="topic__img">
+        <span class="topic__number">02</span>
+        <h3 class="topic__title">Top 10 Laptops of 2022</h3>
+        <p class="topic__description">Our best picks for various needs and budgets.</p>
+      </div>
+      <div class="topic">
+        <img src="images/image-gaming-growth.jpg" alt="" class="topic__img">
+        <span class="topic__number">03</span>
+        <h3 class="topic__title">The Growth of Gaming</h3>
+        <p class="topic__description">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script> 
 </body>
 </html>
